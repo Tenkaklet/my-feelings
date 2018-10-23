@@ -22,15 +22,24 @@
             <h2>And so it begins</h2>
         </div>
     </header>
-    <div class="ui container">
+    <div class="ui four column stackable grid container">
         {{ content }}
 
         {% for post in site.posts %}
-        <article class="ui raised segment">
-            <h3><a href="{{post.url}}">{{ post.title }}</a></h3>
-            <p>{{ post.author }}</p>
-            <p>{{post.excerpt}}</p>
-        </article>
+        <section class="ui segment no-border">
+            <article class="ui card raised">
+                <a href="{{post.url}}" class="image">
+                    <img src="{{post.image}}" alt="">
+                </a>
+                <div class="content">
+                    <a href="{{post.url}}" class="header">{{post.title}}</a>
+                    <span>{{post.author}}</span>
+                    <div class="meta">
+                        <p>{{post.excerpt}}</p>                        
+                    </div>
+                </div>
+            </article>
+        </section>
         {% endfor %}
 
 

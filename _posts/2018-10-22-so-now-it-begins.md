@@ -1,4 +1,7 @@
 ---
 layout: post
-permalink: 
+permalink: /beginning
+image: /assets/sun.jpg
 ---
+
+*bla bla*

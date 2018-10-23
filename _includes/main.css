@@ -6,7 +6,7 @@ body {
 
 
 .top {
-    background-image: url('../assets/sun.jpg');
+    background-image: url('../assets/beach_image.png');
     background-size: cover;
     height: 60vh;
     background-position: 100%;
@@ -23,4 +23,8 @@ body {
 .middle * {
     text-align: center;
     margin: 0;
+}
+
+.no-border {
+    border: none !important;
 }
