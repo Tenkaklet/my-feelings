@@ -1,0 +1,27 @@
+{% include head.html %}
+
+<body>
+    <div class="ui borderless main menu">
+        <div class="ui text container">
+            <div class="header item">
+                <a href="/">
+                    Home
+                </a>
+            </div>
+
+            {% for page in site.pages %}
+            {% if page.title %}
+            <a href="{{page.url}}" class="item">{{page.title}}</a>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="ui container">
+        {{ content }}
+    </div>
+    
+    {% include bottom.html %}
+
+</body>
+
+</html>
