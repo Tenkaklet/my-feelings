@@ -4,9 +4,13 @@ body {
     font-family: 'K2D', sans-serif;
 }
 
-
+.main.menu {
+    position: fixed;
+    width: 100%;
+    box-shadow: 2px 2px 4px #999;
+}
 .top {
-    background-image: url('../assets/beach_image.png');
+    background-image: url('../assets/forest.png');
     background-size: cover;
     height: 60vh;
     background-position: 100%;
@@ -17,10 +21,18 @@ body {
 }
 
 .ui.menu {
-    /* margin: 0; */
+    margin: 0;
+    z-index: 3;
 }
 
-.middle * {
+.middle {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2.3rem;
+    border-radius: 3.5px;
+}
+
+
+.middle h1, h2 {
     text-align: center;
     margin: 0;
 }
@@ -28,3 +40,18 @@ body {
 .no-border {
     border: none !important;
 }
+
+/* selector */
+
+::selection {
+    color: #FFF;
+    background-color: #000;
+}
+
+.padding {
+    padding-top: 100px;
+}
+
+.max-link {
+    color: green;
+} 
