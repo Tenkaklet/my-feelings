@@ -22,12 +22,12 @@
             <h2><em>It's difficult to understand...</em></h2>
         </div>
     </header>
-    <div class="ui four column stackable grid container margin-bottom">
+    <div class="ui four column stackable grid margin-bottom">
         {{ content }}
 
         {% for post in site.posts %}
         <section class="ui segment no-border">
-            <article class="ui card raised">
+            <article class="ui card raised column">
                 <a href="{{post.url}}" class="image">
                     <img src="{{post.image}}" alt="">
                 </a>
@@ -35,7 +35,8 @@
                     <a href="{{post.url}}" class="header">{{post.title}}</a>
                     <span>{{post.author}}</span>
                     <div class="meta">
-                        <p>{{post.excerpt}}</p>                        
+                        <p>{{post.excerpt}}</p>
+                        <a href="{{post.url}}" class="ui black basic button">Read</a>                       
                     </div>
                 </div>
             </article>
